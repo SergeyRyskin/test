@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Upload() {
+export default function My_Tracks() {
   return (
  
 <div className="h-screen">
@@ -92,9 +92,6 @@ export default function Upload() {
         </button>
 
       </div>
-
-
-
 
 
     </div> //ALL DIV COMPONENTS END HERE

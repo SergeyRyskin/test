@@ -1,6 +1,8 @@
 {
-  "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
-  "/upload": "pages/upload.js"
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/dashboard": "pages/dashboard.js",
+  "/upload": "pages/upload.js",
+  "/my_tracks": "pages/my_tracks.js"
 }
