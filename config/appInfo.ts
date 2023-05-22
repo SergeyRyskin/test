@@ -5,6 +5,6 @@ export const appInfo = {
     apiDomain: "http://localhost:3000",/*if you do a LocalDev cahnge to "http://localhost:3000" */
     websiteDomain: "https://diktatorial-web.vercel.app/",/*if you do a LocalDev cahnge to "http://localhost:3000" */
     apiBasePath: "/api/auth",
-    websiteBasePath: "/upload"
+    websiteBasePath: "/auth"
   }
   
