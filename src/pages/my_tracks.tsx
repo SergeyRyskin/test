@@ -9,7 +9,7 @@ export default function My_Tracks() {
 <div className="h-screen">
     <header className="flex flex-row justify-between items-center px-4 py-4">
       <div className="flex flex-col">
-      <Image src="/diktatorial_logo.svg" alt="name" width={200} height={50} />
+      <Image src="/diktatorial_logo.svg" alt="name" width="250" height="50" />
 
       <div className="flex flex-row justify-center">
               <div className="flex items-center bg-gray-800 rounded-md">

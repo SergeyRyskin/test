@@ -2,7 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/dashboard": "pages/dashboard.js",
-  "/upload": "pages/upload.js",
-  "/my_tracks": "pages/my_tracks.js"
+  "/upload": "pages/upload.js"
 }
