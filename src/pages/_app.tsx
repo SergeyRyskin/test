@@ -12,7 +12,7 @@ if (typeof window !== 'undefined') {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <SuperTokensWrapper>
-      <Component {...pageProps} />
+      
     </SuperTokensWrapper>
   );
 }

@@ -1300,7 +1300,7 @@ supertokens-js-override@0.0.4, supertokens-js-override@^0.0.4:
   resolved "https://registry.yarnpkg.com/supertokens-js-override/-/supertokens-js-override-0.0.4.tgz#9af583fbc5e1f0195dbb358c4fcf75f44c76dc09"
   integrity sha512-r0JFBjkMIdep3Lbk3JA+MpnpuOtw4RSyrlRAbrzMcxwiYco3GFWl/daimQZ5b1forOiUODpOlXbSOljP/oyurg==
 
-supertokens-node@^14.0.2:
+supertokens-node@^14.1.1:
   version "14.1.1"
   resolved "https://registry.yarnpkg.com/supertokens-node/-/supertokens-node-14.1.1.tgz#7b8fda41d8b28ef4cdf11e004e2b0ea42a700398"
   integrity sha512-BFcKyZs0pPe8GyKaSIcBzwJ25bU2jvVB/JKP+C1TZy8ngFNd/stETbQWVQ5sszsUb0GuxkKduDzkgxw5AYtfTA==

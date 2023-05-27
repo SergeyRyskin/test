@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { EmailPasswordPreBuiltUI } from "supertokens-auth-react/recipe/emailpassword/prebuiltui";
 import { redirectToAuth } from 'supertokens-auth-react'
 import { canHandleRoute, getRoutingComponent } from 'supertokens-auth-react/ui'
+import Upload from '../upload';
 
 const SuperTokensComponentNoSSR = dynamic<{}>(
   new Promise((res) => res(() => getRoutingComponent([EmailPasswordPreBuiltUI]))),
@@ -19,6 +20,6 @@ export default function Auth() {
   }, [])
 
   return (
-      <SuperTokensComponentNoSSR />
+    <Upload />
   )
 }
