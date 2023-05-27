@@ -7,8 +7,8 @@ export const backendConfig = (): TypeInput => {
   return {
     framework: "express",
     supertokens: {
-      connectionURI: "",
-      apiKey: "",
+      connectionURI: "https://dev-f88375c1f0c211ed9453a13f3d72b3e7-us-east-1.aws.supertokens.io:3569",
+      apiKey: "KSvfRgRg0bb21yZV6Oa1SObkOhFj7M",
     },
     appInfo,
     recipeList: [
