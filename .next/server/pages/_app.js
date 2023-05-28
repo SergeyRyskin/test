@@ -12,36 +12,14 @@ exports.id = "pages/_app";
 exports.ids = ["pages/_app"];
 exports.modules = {
 
-/***/ "./config/appInfo.ts":
-/*!***************************!*\
-  !*** ./config/appInfo.ts ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"appInfo\": () => (/* binding */ appInfo)\n/* harmony export */ });\nconst appInfo = {\n    // learn more about this on https://supertokens.com/docs/thirdpartyemailpassword/appinfo\n    appName: \"Diktatorial\",\n    apiDomain: \"https://diktatorial-web.vercel.app\",\n    websiteDomain: \"https://diktatorial-web.vercel.app\",\n    apiBasePath: \"/api/auth\",\n    websiteBasePath: \"/auth\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb25maWcvYXBwSW5mby50cy5qcyIsIm1hcHBpbmdzIjoiOzs7O0FBQ08sTUFBTUEsVUFBVTtJQUNyQix3RkFBd0Y7SUFDeEZDLFNBQVM7SUFDVEMsV0FBVztJQUNYQyxlQUFlO0lBQ2ZDLGFBQWE7SUFDYkMsaUJBQWlCO0FBQ25CLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9kaWt0YXQtd2ViLy4vY29uZmlnL2FwcEluZm8udHM/OWZjMyJdLCJzb3VyY2VzQ29udGVudCI6WyJcclxuZXhwb3J0IGNvbnN0IGFwcEluZm8gPSB7XHJcbiAgLy8gbGVhcm4gbW9yZSBhYm91dCB0aGlzIG9uIGh0dHBzOi8vc3VwZXJ0b2tlbnMuY29tL2RvY3MvdGhpcmRwYXJ0eWVtYWlscGFzc3dvcmQvYXBwaW5mb1xyXG4gIGFwcE5hbWU6IFwiRGlrdGF0b3JpYWxcIixcclxuICBhcGlEb21haW46IFwiaHR0cHM6Ly9kaWt0YXRvcmlhbC13ZWIudmVyY2VsLmFwcFwiLFxyXG4gIHdlYnNpdGVEb21haW46IFwiaHR0cHM6Ly9kaWt0YXRvcmlhbC13ZWIudmVyY2VsLmFwcFwiLFxyXG4gIGFwaUJhc2VQYXRoOiBcIi9hcGkvYXV0aFwiLFxyXG4gIHdlYnNpdGVCYXNlUGF0aDogXCIvYXV0aFwiXHJcbn1cclxuIl0sIm5hbWVzIjpbImFwcEluZm8iLCJhcHBOYW1lIiwiYXBpRG9tYWluIiwid2Vic2l0ZURvbWFpbiIsImFwaUJhc2VQYXRoIiwid2Vic2l0ZUJhc2VQYXRoIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./config/appInfo.ts\n");
-
-/***/ }),
-
-/***/ "./config/frontendConfig.ts":
-/*!**********************************!*\
-  !*** ./config/frontendConfig.ts ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"frontendConfig\": () => (/* binding */ frontendConfig)\n/* harmony export */ });\n/* harmony import */ var supertokens_auth_react_recipe_emailpassword__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! supertokens-auth-react/recipe/emailpassword */ \"supertokens-auth-react/recipe/emailpassword\");\n/* harmony import */ var supertokens_auth_react_recipe_emailpassword__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(supertokens_auth_react_recipe_emailpassword__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var supertokens_auth_react_recipe_session__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! supertokens-auth-react/recipe/session */ \"supertokens-auth-react/recipe/session\");\n/* harmony import */ var supertokens_auth_react_recipe_session__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(supertokens_auth_react_recipe_session__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _appInfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./appInfo */ \"./config/appInfo.ts\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ \"next/router\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\nconst frontendConfig = ()=>{\n    return {\n        appInfo: _appInfo__WEBPACK_IMPORTED_MODULE_2__.appInfo,\n        recipeList: [\n            supertokens_auth_react_recipe_emailpassword__WEBPACK_IMPORTED_MODULE_0___default().init(),\n            supertokens_auth_react_recipe_session__WEBPACK_IMPORTED_MODULE_1___default().init()\n        ],\n        windowHandler: (oI)=>{\n            return {\n                ...oI,\n                location: {\n                    ...oI.location,\n                    setHref: (href)=>{\n                        next_router__WEBPACK_IMPORTED_MODULE_3___default().push(href);\n                    }\n                }\n            };\n        }\n    };\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9jb25maWcvZnJvbnRlbmRDb25maWcudHMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBNEU7QUFDWjtBQUM3QjtBQUNIO0FBRXpCLE1BQU1JLGlCQUFpQixJQUFNO0lBQ2xDLE9BQU87UUFDTEYsT0FBT0EsK0NBQUFBO1FBQ1BHLFlBQVk7WUFDVkwsdUZBQXVCO1lBQ3ZCQyxpRkFBaUI7U0FDbEI7UUFDRE0sZUFBZSxDQUFDQyxLQUFZO1lBQzFCLE9BQU87Z0JBQ0wsR0FBR0EsRUFBRTtnQkFDTEMsVUFBVTtvQkFDUixHQUFHRCxHQUFHQyxRQUFRO29CQUNkQyxTQUFTLENBQUNDLE9BQWlCO3dCQUN6QlIsdURBQVcsQ0FBQ1E7b0JBQ2Q7Z0JBQ0Y7WUFDRjtRQUNGO0lBQ0Y7QUFDRixFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZGlrdGF0LXdlYi8uL2NvbmZpZy9mcm9udGVuZENvbmZpZy50cz8wMDlhIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBFbWFpbFBhc3N3b3JkUmVhY3QgZnJvbSAnc3VwZXJ0b2tlbnMtYXV0aC1yZWFjdC9yZWNpcGUvZW1haWxwYXNzd29yZCdcclxuaW1wb3J0IFNlc3Npb25SZWFjdCBmcm9tICdzdXBlcnRva2Vucy1hdXRoLXJlYWN0L3JlY2lwZS9zZXNzaW9uJ1xyXG5pbXBvcnQgeyBhcHBJbmZvIH0gZnJvbSAnLi9hcHBJbmZvJ1xyXG5pbXBvcnQgUm91dGVyIGZyb20gJ25leHQvcm91dGVyJ1xyXG5cclxuZXhwb3J0IGNvbnN0IGZyb250ZW5kQ29uZmlnID0gKCkgPT4ge1xyXG4gIHJldHVybiB7XHJcbiAgICBhcHBJbmZvLFxyXG4gICAgcmVjaXBlTGlzdDogW1xyXG4gICAgICBFbWFpbFBhc3N3b3JkUmVhY3QuaW5pdCgpLFxyXG4gICAgICBTZXNzaW9uUmVhY3QuaW5pdCgpLFxyXG4gICAgXSxcclxuICAgIHdpbmRvd0hhbmRsZXI6IChvSTogYW55KSA9PiB7XHJcbiAgICAgIHJldHVybiB7XHJcbiAgICAgICAgLi4ub0ksXHJcbiAgICAgICAgbG9jYXRpb246IHtcclxuICAgICAgICAgIC4uLm9JLmxvY2F0aW9uLFxyXG4gICAgICAgICAgc2V0SHJlZjogKGhyZWY6IHN0cmluZykgPT4ge1xyXG4gICAgICAgICAgICBSb3V0ZXIucHVzaChocmVmKVxyXG4gICAgICAgICAgfSxcclxuICAgICAgICB9LFxyXG4gICAgICB9XHJcbiAgICB9LFxyXG4gIH1cclxufSJdLCJuYW1lcyI6WyJFbWFpbFBhc3N3b3JkUmVhY3QiLCJTZXNzaW9uUmVhY3QiLCJhcHBJbmZvIiwiUm91dGVyIiwiZnJvbnRlbmRDb25maWciLCJyZWNpcGVMaXN0IiwiaW5pdCIsIndpbmRvd0hhbmRsZXIiLCJvSSIsImxvY2F0aW9uIiwic2V0SHJlZiIsImhyZWYiLCJwdXNoIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./config/frontendConfig.ts\n");
-
-/***/ }),
-
-/***/ "./src/pages/_app.tsx":
+/***/ "./src/pages/_app.jsx":
 /*!****************************!*\
-  !*** ./src/pages/_app.tsx ***!
+  !*** ./src/pages/_app.jsx ***!
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"./node_modules/react/jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/globals.css */ \"./src/styles/globals.css\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var supertokens_auth_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! supertokens-auth-react */ \"supertokens-auth-react\");\n/* harmony import */ var supertokens_auth_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(supertokens_auth_react__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _config_frontendConfig__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../config/frontendConfig */ \"./config/frontendConfig.ts\");\n\n\n\n\n\nif (false) {}\nfunction MyApp({ Component , pageProps  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(supertokens_auth_react__WEBPACK_IMPORTED_MODULE_3__.SuperTokensWrapper, {}, void 0, false, {\n        fileName: \"C:\\\\Users\\\\Sergey\\\\ReactProjects\\\\diktatorial-web\\\\src\\\\pages\\\\_app.tsx\",\n        lineNumber: 14,\n        columnNumber: 5\n    }, this);\n}\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyApp);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvX2FwcC50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFBOEI7QUFDTDtBQUVvRDtBQUNqQjtBQUU1RCxJQUFJLEtBQWtCLEVBQWEsRUFHbEM7QUFFRCxTQUFTSyxNQUFNLEVBQUVDLFVBQVMsRUFBRUMsVUFBUyxFQUFZLEVBQUU7SUFDakQscUJBQ0UsOERBQUNMLHNFQUFrQkE7Ozs7O0FBSXZCO0FBRUEsaUVBQWVHLEtBQUtBLEVBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9kaWt0YXQtd2ViLy4vc3JjL3BhZ2VzL19hcHAudHN4P2Y5ZDYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICcuLi9zdHlsZXMvZ2xvYmFscy5jc3MnXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgeyBBcHBQcm9wcyB9IGZyb20gJ25leHQvYXBwJ1xuaW1wb3J0IFN1cGVyVG9rZW5zUmVhY3QsIHsgU3VwZXJUb2tlbnNXcmFwcGVyIH0gZnJvbSAnc3VwZXJ0b2tlbnMtYXV0aC1yZWFjdCdcbmltcG9ydCB7IGZyb250ZW5kQ29uZmlnIH0gZnJvbSAnLi4vLi4vY29uZmlnL2Zyb250ZW5kQ29uZmlnJ1xuXG5pZiAodHlwZW9mIHdpbmRvdyAhPT0gJ3VuZGVmaW5lZCcpIHtcbiAgLy8gd2Ugb25seSB3YW50IHRvIGNhbGwgdGhpcyBpbml0IGZ1bmN0aW9uIG9uIHRoZSBmcm9udGVuZCwgc28gd2UgY2hlY2sgdHlwZW9mIHdpbmRvdyAhPT0gJ3VuZGVmaW5lZCdcbiAgU3VwZXJUb2tlbnNSZWFjdC5pbml0KGZyb250ZW5kQ29uZmlnKCkpXG59XG5cbmZ1bmN0aW9uIE15QXBwKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfTogQXBwUHJvcHMpIHtcbiAgcmV0dXJuIChcbiAgICA8U3VwZXJUb2tlbnNXcmFwcGVyPlxuICAgICAgXG4gICAgPC9TdXBlclRva2Vuc1dyYXBwZXI+XG4gICk7XG59XG5cbmV4cG9ydCBkZWZhdWx0IE15QXBwIl0sIm5hbWVzIjpbIlJlYWN0IiwiU3VwZXJUb2tlbnNSZWFjdCIsIlN1cGVyVG9rZW5zV3JhcHBlciIsImZyb250ZW5kQ29uZmlnIiwiaW5pdCIsIk15QXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/pages/_app.tsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ AppProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"./node_modules/react/jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/styles/globals.css */ \"./src/styles/globals.css\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction AppProps({ Component , pageProps  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n        ...pageProps\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\Sergey\\\\ReactProjects\\\\diktatorial-web\\\\src\\\\pages\\\\_app.jsx\",\n        lineNumber: 5,\n        columnNumber: 10\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvX2FwcC5qc3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQTZCO0FBR2QsU0FBU0EsU0FBUyxFQUFFQyxVQUFTLEVBQUVDLFVBQVMsRUFBQyxFQUFFO0lBQ3hELHFCQUFPLDhEQUFDRDtRQUFXLEdBQUdDLFNBQVM7Ozs7OztBQUNqQyxDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vZGlrdGF0LXdlYi8uL3NyYy9wYWdlcy9fYXBwLmpzeD80Yzc3Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnQC9zdHlsZXMvZ2xvYmFscy5jc3MnXHJcblxyXG5cclxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQXBwUHJvcHMoeyBDb21wb25lbnQsIHBhZ2VQcm9wc30pIHtcclxuICByZXR1cm4gPENvbXBvbmVudCB7Li4ucGFnZVByb3BzfSAvPlxyXG59XHJcblxyXG4iXSwibmFtZXMiOlsiQXBwUHJvcHMiLCJDb21wb25lbnQiLCJwYWdlUHJvcHMiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/pages/_app.jsx\n");
 
 /***/ }),
 
@@ -77,17 +55,6 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
-/***/ "next/router":
-/*!******************************!*\
-  !*** external "next/router" ***!
-  \******************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/router");
-
-/***/ }),
-
 /***/ "react":
 /*!************************!*\
   !*** external "react" ***!
@@ -96,39 +63,6 @@ module.exports = require("next/router");
 
 "use strict";
 module.exports = require("react");
-
-/***/ }),
-
-/***/ "supertokens-auth-react":
-/*!*****************************************!*\
-  !*** external "supertokens-auth-react" ***!
-  \*****************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("supertokens-auth-react");
-
-/***/ }),
-
-/***/ "supertokens-auth-react/recipe/emailpassword":
-/*!**************************************************************!*\
-  !*** external "supertokens-auth-react/recipe/emailpassword" ***!
-  \**************************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("supertokens-auth-react/recipe/emailpassword");
-
-/***/ }),
-
-/***/ "supertokens-auth-react/recipe/session":
-/*!********************************************************!*\
-  !*** external "supertokens-auth-react/recipe/session" ***!
-  \********************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("supertokens-auth-react/recipe/session");
 
 /***/ })
 
@@ -139,7 +73,7 @@ module.exports = require("supertokens-auth-react/recipe/session");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./src/pages/_app.tsx"));
+var __webpack_exports__ = (__webpack_exec__("./src/pages/_app.jsx"));
 module.exports = __webpack_exports__;
 
 })();
