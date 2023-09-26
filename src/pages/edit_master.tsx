@@ -12,7 +12,9 @@ export default function Dashoard() {
     <main className='h-screen'>
       <Header />
       <main>
-        
+        <article className='flex justify-center items-center'>
+          <h1 className='font-bold px-80'>My tracks</h1>
+        </article>
       </main>
     </main>
   )

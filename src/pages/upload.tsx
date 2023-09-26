@@ -3,21 +3,30 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import UploadHeader from '@/components/UploadHeader'
 import { useState } from 'react'
+import Popup from '@/components/TrackPopUp'
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Upload() {
-  const[TrackPopUp, setTrackPopUp] =useState(false);
-  const OpenPopUp = () => {
-    setTrackPopUp(!TrackPopUp);
-  }
+
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
+
   return (
   <main className='h-screen'>
     <Header /> 
     <article className='flex justify-center items-center'>
       <h1 className='font-bold px-80'>My tracks</h1>
-      <button onClick={OpenPopUp} className="px-4 py-2 m-5 text-white rounded-md bg-gradient-to-r from-greyGradient1 to-greyGradient2 hover:white inline-flex items-center">
+      <button onClick={openPopup} className="px-4 py-2 m-5 text-white rounded-md bg-gradient-to-r from-greyGradient1 to-greyGradient2 hover:white inline-flex items-center">
+        {isPopupOpen && <Popup onClose={closePopup} />}
           <Image className='m-1 ' src="/upload_file.svg" alt="name" width='20' height='20'/>
         <p className='font-bold '>Upload track</p>
       </button>
